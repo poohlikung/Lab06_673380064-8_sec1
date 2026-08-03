@@ -13,4 +13,11 @@ public class HomeController {
         model.addAttribute("studentId", "673380064-8");
         return "home"; // ไม่ใช่ path ไฟล์ แค่ "ชื่อ view" เชิงตรรกะเท่านั้น
     }
+
+
+    @GetMapping("/about")
+    public String about(Model model) {
+        model.addAttribute("message", "ฉันเรียนที่มหาวิทยาลัยขอนแก่น ปี 3 วิทยาลัยการคอมพิวเตอร์ สาขาวิทยาการคอมพิวเตอร์ ชอบฟัง Youngj");
+        return "about"; // ไม่ใช่ path ไฟล์ แค่ "ชื่อ view" เชิงตรรกะเท่านั้น
+    }
 }
